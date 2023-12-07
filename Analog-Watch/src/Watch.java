@@ -13,7 +13,7 @@ public class Watch {
 
 			int seconds = (int) ((milliseconds / 1000) % 60);
 			int minutes = (int) ((milliseconds / (1000 * 60)) % 60);
-			int hours = (int) ((milliseconds / (1000 * 60 * 60)) % 24) + 1;
+			int hours = (int) ((milliseconds / (1000 * 60 * 60)) % 24) + 1;     // UTC +01:00
 
 			String time = String.format("%02d:%02d:%02d", hours, minutes, seconds);
 			System.out.println(time);
